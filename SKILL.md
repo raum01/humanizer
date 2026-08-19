@@ -8,7 +8,7 @@ description: |
   as such, so it is safe on other languages. Based on Wikipedia's "Signs of AI writing."
 license: MIT
 metadata:
-  version: "2.12.0"
+  version: "2.13.0"
 ---
 
 # Humanizer: remove AI writing patterns
@@ -40,25 +40,25 @@ A writing sample takes priority over these style rules. If the sample uses em da
 
 ## Language scope
 
-Twenty-eight of the patterns describe thought and structure and work in any language. Seven act on
-English mechanics: §7, §8, §9, §14, §17, §19, §26. Outside English most are simply inert, but two
-cause damage, because they delete grammar:
+Twenty-eight patterns describe thought and structure and work in any language. Five act on English
+mechanics and are inert or misleading elsewhere: §7, §8, §9, §19, §26. Two need care rather than
+disabling:
 
-- **§14 dashes.** Russian requires the dash between nominals with no copula (*Москва — столица
-  России*), in dialogue attribution, and in generalizing constructions; German and Polish have
-  their own required uses. Keep any dash the target language's grammar demands. §14 governs the
-  decorative English em dash, not punctuation the sentence cannot stand without.
-- **§19 quotation marks.** Normalize to the target language's convention, not to ASCII: Russian
-  «ёлочки» with „лапки" nested, French « » with spaces, German „ ".
+- **§14 dashes.** Both halves are true at once. The dash is *required* between Russian nominals with
+  no copula (*Москва — столица России*), in dialogue and in generalizing constructions, so the
+  blanket search-and-delete produces errors. But overuse remains a genuine tell in Russian too:
+  models trained on literary prose reach for a dash where a person writes a comma or parentheses.
+  Keep what grammar demands, cut the decorative rest.
+- **§17 title case.** Applies to Russian, and for the reason English does not need it: Russian
+  headings use sentence case, so *Ранняя Жизнь и Образование* is copied English habit.
 
-Two more misfire only if applied by analogy: **§8**, because the Russian copula between nominals
-*is* the dash, and **§13**, whose passive half transfers while its missing-subject half does not —
-*Конфигурация не требуется* is idiomatic, and only English demands an explicit subject.
-
-Being inert is not the same as being safe: §7's English word list gives false coverage, so a Russian
-text full of *стоит отметить* and *играет ключевую роль* passes untouched. Outside English, judge by
-the structural patterns and read the word list as an example of what to hunt for, not the list to
-match.
+**§8** and **§13** misfire by analogy: the Russian copula between nominals *is* the dash, and
+subjectless Russian sentences (*Конфигурация не требуется*) are idiomatic, not omissions.
+Being inert is not being safe. §7's English word list gives false coverage: Russian text full of
+*играет ключевую роль* and *стоит отметить* passes untouched. For Russian, use
+[references/russian.md](references/russian.md), built from the Russian Wikipedia counterpart of this
+skill's own source. For other languages, judge by the structural patterns and read §7 as an example
+of what to hunt for rather than the list to match.
 
 ## Add personality only when it fits
 

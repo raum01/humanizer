@@ -217,6 +217,12 @@ It does not invent facts, names, dates, quotes, or citations. Any added detail m
 
 ## Version history
 
+- **2.13.0** - Added `references/russian.md`, a Russian marker list built from the Russian
+  Wikipedia counterpart of this skill's own source, plus a practitioner survey. Corrected two claims
+  from 2.12.0 that research disproved: dash *overuse* is a real tell in Russian as well, so §14 needs
+  care rather than disabling, and §17 title case does apply to Russian, where sentence case is the
+  norm. §19 is reclassified as typography rather than AI detection, since the Russian source does not
+  list quotation marks as a marker at all.
 - **2.12.0** - Scoped the seven English-only rules and named the two that damage other languages:
   §14 deletes the Russian predicate dash, §19 normalized «ёлочки» toward ASCII. §14 now keeps
   numeric ranges and quoted text. Fixed the §2 example, which dropped a follower count and two
