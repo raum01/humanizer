@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "humanizer",
+  "description": "Rewrite text that sounds AI-generated while keeping the writer's facts, meaning, and voice. Language-aware fork.",
+  "version": "2.12.0",
+  "author": {
+    "name": "raum01",
+    "url": "https://github.com/raum01"
+  },
+  "homepage": "https://github.com/raum01/humanizer",
+  "repository": "https://github.com/raum01/humanizer",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "editing",
+    "ai-detection",
+    "humanize",
+    "prose",
+    "style"
+  ]
+}
