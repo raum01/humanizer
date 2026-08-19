@@ -8,10 +8,20 @@ Humanizer is an agent skill written in Markdown. `SKILL.md` is the prompt that a
 
 Keep the skill portable. Do not write instructions that limit it to one or two agent tools.
 
+Say which language a rule acts on. Most patterns describe thought and structure and hold anywhere,
+but a rule that edits mechanics — punctuation, casing, a word list, a grammatical construction — is
+about one language and must say so. A rule that silently assumes English does not merely fail
+elsewhere; §14 once deleted the dash that Russian grammar requires between nominals, and §17 was
+written off as inert on Russian when the opposite was true. When adding or changing a mechanical
+rule, state its scope and check `references/russian.md` for the counterpart.
+
 ## Key files
 
 - `SKILL.md` is the source of truth. It contains portable YAML metadata, 35 numbered patterns, and their examples.
 - `skills/humanizer/SKILL.md` links to the root skill for Claude Desktop and older plugin loaders. Do not replace the link with a copy or edit it as a separate file.
+- `references/russian.md` lists Russian AI markers, sourced from the Russian Wikipedia counterpart of
+  this skill's own source. `SKILL.md` stays language-scoped and points here; keep the Russian detail
+  out of the root file, which has a 500-line budget.
 - `README.md` explains installation, use, patterns, and version history.
 - `.claude-plugin/plugin.json` describes the Claude plugin.
 - `.claude-plugin/marketplace.json` lets users add this repo as a Claude marketplace.

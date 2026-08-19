@@ -16,12 +16,13 @@ by an adversarial review from an independent model (GLM-5.2), then verified
 against the source before being acted on.
 
 1. **Language scope.** The original never states which language it applies to,
-   while seven of its rules act on English mechanics. Two of those damage other
-   languages rather than merely being inert: §14 deletes the Russian predicate
-   dash (*Москва — столица России*), which is required punctuation and not a
-   flourish, and §19 normalized «ёлочки» toward ASCII quotes, which is the
-   typewriter register in Russian. Both are now scoped, and §8 and §13 carry
-   notes about misfiring by analogy.
+   while several of its rules act on English mechanics. §14 deleted the Russian
+   predicate dash (*Москва — столица России*), which is required punctuation and
+   not a flourish. Research then showed the picture is two-sided: dash *overuse*
+   is a genuine marker in Russian as well, so §14 needs care rather than
+   disabling. §17 turned out to apply to Russian for the very reason it looked
+   inert — sentence case is the norm, so capitalized headings are a copied English
+   habit. §8, §13 and §19 carry notes about misfiring by analogy.
 
 2. **§14 no longer removes dashes that carry meaning.** Numeric ranges
    (`1990–2005`, `10–20 ms`), grammar-required dashes, and dashes inside

@@ -118,6 +118,21 @@ It does not invent facts, names, dates, quotes, or citations. Any added detail m
 
 > "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
 
+## Languages other than English
+
+Twenty-eight of the patterns describe thought and structure and work anywhere. Five act on English
+mechanics (§7, §8, §9, §19, §26) and are inert or misleading elsewhere. Two need care rather than
+disabling: §14, because a Russian sentence can require the dash it deletes while still overusing
+dashes elsewhere, and §17, which applies to Russian precisely because sentence case is the norm
+there.
+
+For Russian there is a dedicated list in [`references/russian.md`](references/russian.md), built
+from [Википедия: Признаки сгенерированности
+текста](https://ru.wikipedia.org/wiki/Википедия:Признаки_сгенерированности_текста) — the Russian
+counterpart of the English page this skill is derived from. It covers twelve markers, two of which
+have no English analogue: rigid word order in a language that permits inversion, and swapping a
+name for an epithet on every mention.
+
 ## 35 patterns with examples
 
 ### Content patterns
@@ -125,7 +140,7 @@ It does not invent facts, names, dates, quotes, or citations. Any added detail m
 | # | Pattern | Before | After |
 |---|---------|--------|-------|
 | 1 | **Inflated importance and legacy** | "marking a pivotal moment in the evolution of..." | "was established in 1989 as part of a wider decentralization" |
-| 2 | **Name-dropping to prove importance** | "cited in NYT, BBC, FT, and The Hindu" | Keep only useful, sourced context |
+| 2 | **Name-dropping to prove importance** | "maintains an active social media presence" | Cut the rhetoric, keep every named fact |
 | 3 | **Shallow -ing analysis** | "symbolizing... reflecting... showcasing..." | Keep only what the source supports |
 | 4 | **Sales language** | "nestled within the breathtaking region" | "is a town in the Gonder region" |
 | 5 | **Vague sources** | "Experts believe it plays a crucial role" | Name a real source or remove the claim |
@@ -152,7 +167,7 @@ It does not invent facts, names, dates, quotes, or citations. Any added detail m
 | 16 | **Lists with bold mini-headings** | "**Performance:** Performance improved" | Use prose when a list adds no value |
 | 17 | **Title case in headings** | "Strategic Negotiations And Partnerships" | "Strategic negotiations and partnerships" |
 | 18 | **Emojis** | "🚀 Launch Phase: 💡 Key Insight:" | Remove emojis |
-| 19 | **Curly quotes** | `said “the project”` | `said "the project"` |
+| 19 | **Quotation marks** | `said “the project”` | Target language's convention, not ASCII |
 | 26 | **Too many hyphenated word pairs** | “cross-functional, data-driven, client-facing” | Keep only the hyphens grammar needs |
 | 27 | **A fake deeper truth** | "At its core, what matters is..." | State the point directly |
 | 28 | **Announcing the next point** | "Let's dive in", or "one thing that bit me" | Start with the content |
@@ -211,6 +226,11 @@ It does not invent facts, names, dates, quotes, or citations. Any added detail m
 > I would go back, but in spring and with better shoes. Lisbon does not bend over backward to make things easy for you. I think I liked that, even when my legs disagreed.
 
 ## Sources
+
+- Russian markers: [Википедия: Признаки сгенерированности
+  текста](https://ru.wikipedia.org/wiki/Википедия:Признаки_сгенерированности_текста), maintained by
+  the Russian Wikipedia community, and a [practitioner survey of 2025-2026
+  markers](https://vc.ru/ai/2936857-markery-neurosetevogo-teksta).
 
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) - Main source
 - [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup) - Maintains the source page

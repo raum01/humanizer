@@ -4,8 +4,8 @@ description: |
   Rewrite text that sounds AI-generated while keeping the writer's facts,
   meaning, and voice. Use when editing or reviewing prose for inflated claims,
   sales language, vague sources, repetitive structure, stock AI words, passive
-  voice, filler, or chatbot artifacts. Seven rules are English-specific and scoped
-  as such, so it is safe on other languages. Based on Wikipedia's "Signs of AI writing."
+  voice, filler, or chatbot artifacts. English-mechanical rules are scoped as such,
+  with a Russian marker list. Based on Wikipedia's "Signs of AI writing."
 license: MIT
 metadata:
   version: "2.13.0"
